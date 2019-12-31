@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Document</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<ul id="link">
+			<li>
+				<a href="index.html">Home</a>
+			</li>
+			<li>
+				<a href="check_details.html">Check your details</a>
+			</li>
+		</ul>
+		<div class="container">
+			<div class="form-check">
+				<h2>Check Your Details</h2>
+				<form id="check" method="POST">
+					<input
+						type="number"
+						name="pin"
+						id="pin"
+						placeholder="Your 10 Digit Pin Number"
+						required
+					/>
+					<input type="submit" value="Confirm Details" />
+				</form>
+			</div>
+			<div class="form2">
+				<h2>Your Details</h2>
+				<div style="display: block;">
+					<div class="name">
+						<div class="fname">
+							<label for=""
+								>First Name:
+
+								<h3 id="fname"></h3>
+							</label>
+						</div>
+						<div class="lname">
+							<label for=""
+								>Last Name:
+
+								<h3 id="lname"></h3>
+							</label>
+						</div>
+					</div>
+					<div class="mail">
+						<label for=""
+							>Email:
+
+							<h3 id="mail"></h3>
+						</label>
+					</div>
+					<div class="tel">
+						<label for=""
+							>Phone Number:
+							<h3 id="phone"></h3>
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="./js/getDetails.js"></script>
+	</body>
+</html>

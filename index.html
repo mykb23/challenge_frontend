@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>User data bank</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<ul id="link">
+			<li>
+				<a href="index.html">Home</a>
+			</li>
+			<li>
+				<a href="check_details.html">Check your details</a>
+			</li>
+		</ul>
+		<div class="form">
+			<h2>Register for your unique pin</h2>
+			<form id="registerForm">
+				<input
+					type="text"
+					name="first_name"
+					id="fname"
+					placeholder="First Name"
+					required
+				/>
+				<input
+					type="text"
+					name="last_name"
+					id="lname"
+					placeholder="Last Name"
+					required
+				/>
+
+				<input
+					type="email"
+					name="email"
+					id="email"
+					placeholder="Email"
+					required
+				/>
+				<input
+					type="tel"
+					name="phone"
+					id="phone"
+					placeholder="Phone Number"
+					required
+				/>
+				<input type="submit" value="Register" />
+			</form>
+		</div>
+		<script src="./js/app.js"></script>
+	</body>
+</html>
