@@ -7,7 +7,7 @@ regForm.addEventListener('submit', e => {
 	const email = document.querySelector('#email').value;
 	const phone = document.querySelector('#phone').value;
 
-	let postUrl = new URL('http://localhost/challenge_rest/api/user/create.php');
+	let postUrl = new URL('https://userscrud.000webhostapp.com/Backend/api/user/create.php');
 	let data = JSON.stringify({
 		firstname: first_name,
 		lastname: last_name,
@@ -25,9 +25,8 @@ regForm.addEventListener('submit', e => {
 			'Email already in use by another user! Please use another Email address!')
 	) {
 		xhr.onload = () => alert(xhr.response);
-	} else {
-		xhr.onload = () => alert(xhr.response);
-		regForm.reset();
-		// document.getElementById('registerForm').reset();
 	}
+		xhr.onload = () => alert(xhr.response);
+        document.getElementById("registerForm").reset();
+		
 });
