@@ -27,6 +27,7 @@ regForm.addEventListener('submit', e => {
 		xhr.onload = () => alert(xhr.response);
 	} else {
 		xhr.onload = () => alert(xhr.response);
-		document.getElementById('registerForm').reset();
+		regForm.reset();
+		// document.getElementById('registerForm').reset();
 	}
 });
